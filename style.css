@@ -1,0 +1,296 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 50px;
+}
+
+#name {
+    margin-left:0;
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    color: green;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.nav-links li {
+    display: inline;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(2, 51, 2);
+    font-weight: bold;
+    padding: 5px;
+}
+
+.nav-links a:hover {
+    color: #007BFF;
+    transform: translateY(-3px);
+}
+
+#login-button {
+    background-color: rgb(2, 51, 2);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: #fff;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+#login-button:hover {
+    background-color: white;
+    color: green;
+    transform: translateY(-3px);
+}
+
+#page1 {
+    min-height: 200vh;
+    position: relative;
+    width: 100%;
+    position: absolute;
+    
+    padding: 0 1vw;
+    padding-top: 20vh; /* Adjust as per the navbar height */
+}
+
+#page1 h1 {
+    font-size: 6.8vw;
+    font-family: futura;
+    letter-spacing:-5px;
+    line-height: 20px;
+}
+
+#page1 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.twobuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twobuttons button {
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(2, 51, 2);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: #fff;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.twobuttons button:hover {
+    background-color: white;
+    color: green;
+    transform: translateY(-3px);
+}
+
+#canvas_container_div {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#canvas {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.text-container p {
+    position: absolute;
+    font-size: 3.4vh;
+    color:black ;
+    width: 400px;
+    height: 100px;
+    top: calc(50%); /* Adjust this value to position the text below the leaf */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.community {
+    position: relative;
+    top: 180vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: bisque;
+    max-width: 70%; /* Adjust width as needed */
+    max-height: 40%; /* Adjust height as needed */
+    overflow: auto; /* Add scrollbar if needed */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Adjust margin as needed */
+    width: 100%;
+}
+
+.slide img {
+    height: 15vh; /* Reduce height */
+    width: 45%; /* Adjust width for proper spacing */
+    max-width: 100%; /* Ensure images don't exceed their container */
+    padding: 10px;
+}
+
+
+
+
+#video-container
+{
+    top: 150vh;
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    margin-top: 1vw;
+     position: relative;
+}
+
+#video-container video
+{
+    height: 100%;
+    width: 100%;
+    object-fit:cover ;
+}
+
+footer {
+    background-color:white;
+    color:black;
+    padding: 2rem 0;
+    text-align: left;
+    font-size: 2.8vh;
+    position: relative;
+    top: 160vh;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 2rem;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+#signup-button {
+    background-color: rgb(2, 51, 2);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+#signup-button:hover {
+    background-color: white;
+    color: green;
+    transform: translateY(-3px);
+}
+
+.footer-tables {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.footer-table h3 {
+    margin-bottom: 0.5rem;
+}
+
+.footer-table ul {
+    list-style: none;
+    padding: 0;
+}
+.aboutus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    position: relative;
+    top:120vh;
+    left:10%;
+   
+}
+
+.card {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    transform: translateY(100px);
+    transition: transform 0.5s ease-out;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .content {
+    padding: 16px;
+}
+
+.card.show {
+    transform: translateY(0);
+}
